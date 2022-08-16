@@ -25,10 +25,7 @@ async function translate2(value) {
 }
 
 translateBtn.addEventListener('click', async () => {
-  const text = textToBeTranslate.innerHTML.replace(
-    /\<div\>|\<br\>|\<\/div\>/g,
-    ' '
-  );
+  const text = textToBeTranslate.value;
 
   console.log(text);
   const result = await translate2(text);

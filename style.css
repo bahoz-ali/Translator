@@ -151,7 +151,7 @@ p {
   --clr-dic-bg-from: #fff;
   --clr-dic-bg-to: #a1ced1;
   --clr-dic-text1: var(--clr-dic-heading);
-  --clr-dic-text2: var(--clr-dic-bg-from);
+  --clr-dic-text2: var(--clr-dic-heading);
   --clr-dic-heading: #4e7e7e;
 }
 
@@ -192,11 +192,16 @@ p {
   background-color: var(--clr-dic-bg-to);
 }
 
-.dic__body p {
+.dic__body textarea, .dic__body p{
+  font-family: roboto;
+  resize: none;
+  color: var(--clr-dic-text1);
+  font-size: 1rem;
   cursor: text;
   outline: none;
   border: none;
   min-height: 150px;
+  width: 100%;
   max-width: none;
   border-radius: 7px;
 }
