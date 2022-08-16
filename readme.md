@@ -2,7 +2,12 @@
 
 > this is real translator project which can be used to translate English text to kurdish language by using API.
 
-> Live demo [_here_](https://bahoz-ali.github.io/Translator/).
+
+## Screenshots
+
+![Example screenshot](./assets/screenshot.PNG)
+
+# Live demo [_here_](https://bahoz-ali.github.io/Translator/).
 
 ## Technologies Used
 
@@ -18,10 +23,6 @@ List the ready features here:
 - translator English word to Kurdish
 - translate English sentence to Kurdish
 - translate full English paragraph to Kurdish
-
-## Screenshots
-
-![Example screenshot](./assets/screenshot.PNG)
 
 ## Contact
 
