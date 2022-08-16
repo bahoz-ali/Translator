@@ -32,3 +32,8 @@ translateBtn.addEventListener('click', async () => {
   console.log('text: ', result);
   translation.innerHTML = result;
 });
+
+// This function automatically run after the page is opened s
+function websiteVisits(response) {
+  document.querySelector('#visits').textContent = response.value;
+}

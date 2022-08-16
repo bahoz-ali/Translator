@@ -192,7 +192,8 @@ p {
   background-color: var(--clr-dic-bg-to);
 }
 
-.dic__body textarea, .dic__body p{
+.dic__body textarea,
+.dic__body p {
   font-family: roboto;
   resize: none;
   color: var(--clr-dic-text1);
@@ -215,8 +216,30 @@ p {
   font-family: rudaw;
 }
 
-
 /* lets us to add placeholder to div. */
 [contentEditable='true']:empty:not(:focus):before {
   content: attr(data-text);
+}
+
+/* ----- footer style ------ */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family: roboto;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .count{
+  background: var(--clr-dic-heading);
+  color: var(--clr-dic-bg-from);
+  font-weight: 100;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
 }
