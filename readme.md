@@ -21,10 +21,7 @@ List the ready features here:
 
 ## Screenshots
 
-![Example screenshot](./assets/screenshot.png)
-
-
-
+![Example screenshot](./assets/screenshot.PNG)
 
 ## Contact
 
