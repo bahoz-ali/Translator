@@ -9,8 +9,11 @@ async function translate2(value) {
   let url = 'https://microsoft-translator-text.p.rapidapi.com/translate';
   url += `?to[0]=ku&api-version=3.0&profanityAction=noAction&textType=plain`;
 
+  if (value.length >= 600)
+    return ` تکایە بەڕێز هەوڵبدە کەمتر لە ${value.length} .پیت بکەوە کوردی، واتە هەوڵبدە نزیک 600 پیت بکەوە کوردی هەرجارێک`;
+
   if (cashEnglishText == value) return cashKurdishText;
-  
+
   const options = {
     method: 'POST',
     headers: {
@@ -38,8 +41,6 @@ async function translate2(value) {
 
 translateBtn.addEventListener('click', async () => {
   const text = textToBeTranslate.value;
-
-  console.log(text);
   const result = await translate2(text);
 
   translation.innerHTML = result;
