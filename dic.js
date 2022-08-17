@@ -18,9 +18,13 @@ async function translate2(value) {
 
   const response = await fetch(url, options);
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
 
-  const result = data[0].translations[0].text;
+  const result = data[0]?.translations[0]?.text;
+
+  if (!result || typeof result == 'undefined')
+    return 'ببورە بەڕێز مانگانە ڕیگەم پێدراوە تەنیا ٣٠٠ لاپەڕە بکرێتەوە کوردی بۆیە تا مانگێکی تر ناتوانیی هیچ بکەیتەوە بە کوردی، یان دەێت من مانگانە ٦٠ دۆلاریان پێبدەم بۆئەوەی وەرگێڕەکە ڕانەگرن';
+
   return result;
 }
 
