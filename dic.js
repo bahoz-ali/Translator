@@ -9,10 +9,10 @@ async function translate2(value) {
   const options = {
     method: 'POST',
     headers: {
-      'content-type': 'application/json',
-      'X-RapidAPI-Key': 'e25cdbd2d7msh988e5521db83004p109351jsn7aa7f1b8d152',
-      'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com',
-    },
+    'content-type': 'application/json',
+    'X-RapidAPI-Key': '6aa4aeabfcmshd46ef8b482c1622p1541b2jsne7988d0e92d6',
+    'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
+  },
     body: JSON.stringify([{ Text: value }]),
   };
 
